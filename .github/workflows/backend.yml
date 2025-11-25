@@ -9,6 +9,7 @@ env:
   AZURE_FUNCTIONAPP_NAME: 'deploy-automatico-pq-d3hxfvdbeea5b0b9'
   AZURE_FUNCTIONAPP_PACKAGE_PATH: './api' 
   NODE_VERSION: '22.x'
+  SCM_DO_BUILD_DURING_DEPLOYMENT: true
 
 jobs:
   build-and-deploy:
