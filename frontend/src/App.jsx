@@ -12,7 +12,7 @@ function App() {
   const [arquivoImagem, setArquivoImagem] = useState(null)
   const [uploading, setUploading] = useState(false)
 
-  const API_BASE = 'http://localhost:7071/api';
+  const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:7071/api';
 
   const carregarObras = () => {
     fetch(`${API_BASE}/getObras`)
