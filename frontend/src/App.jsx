@@ -12,7 +12,7 @@ function App() {
   const [arquivoImagem, setArquivoImagem] = useState(null)
   const [uploading, setUploading] = useState(false)
 
-  const API_BASE = 'https://deploy-automatico-Pq-d3hxfvdbeea5b0b9.canadacentral-01.azurewebsites.net/api';
+  const API_BASE = 'https://deploy-automatico-pq-d3hxfvdbeea5b0b9.canadacentral-01.azurewebsites.net/api';
 
   const carregarObras = () => {
     fetch(`${API_BASE}/getObras`)
